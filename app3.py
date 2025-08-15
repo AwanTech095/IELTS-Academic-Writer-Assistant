@@ -1,3 +1,6 @@
+import subprocess
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers==4.34.0"])
 import streamlit as st
 from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
 import torch
@@ -147,4 +150,5 @@ with col2:
 
 # Footer
 st.divider()
+
 st.caption("© 2025 IELTS Writing Pro | Academic AI Assistant")
